@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Urok3", "Urok3\Urok3.pyproj", "{27F2AD43-609F-43BF-BF27-D7DFA29A5907}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27F2AD43-609F-43BF-BF27-D7DFA29A5907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27F2AD43-609F-43BF-BF27-D7DFA29A5907}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77CB206E-2FB6-4EFE-B163-18B7010FF5A4}
+	EndGlobalSection
+EndGlobal
