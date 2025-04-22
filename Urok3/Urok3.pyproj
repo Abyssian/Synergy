@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>27f2ad43-609f-43bf-bf27-d7dfa29a5907</ProjectGuid>
+    <ProjectGuid>2b0595ac-5ef8-4e26-aacb-aa2d44c1577f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <StartupFile>Urok3.py</StartupFile>
     <SearchPath>
