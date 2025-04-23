@@ -546,3 +546,47 @@ def fib(n):   #числа Фибоначчи
 
 x = 6
 print(fib(x))
+
+#Объектно-ориентированное программирование
+
+class Human(object):
+    name = "Ivan"
+    height = 175
+    age = 25
+
+default_human = Human()
+default_human.name = "Anton" # можно менять значение
+print(default_human.age) # вывод возраста
+
+
+
+class Human(object):
+    name = "Ivan"
+    height = 175
+    age = 25
+
+    def __init__(self, n, h, a):  #функция-констуктор
+        self.name = n
+        self.height = h
+        self.age = a
+    
+    def privet(self):
+        print(f'My name is {self.name}, my age is {self.age}') 
+
+    def get_older(self):
+        self.age += 5
+
+    def goodbye(self):
+        print('Goodbye')
+
+h1 = Human('Anton', 120, 12)
+h2 = Human('Dima', 190, 23)
+
+print(h1.age)
+h1.get_older() # выдаст возраст старше на 5
+print(h1.age)
+h1.goodbye()
+
+
+
+
