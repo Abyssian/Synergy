@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197
+VisualStudioVersion = 17.13.35931.197 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Urok3", "Urok3\Urok3.pyproj", "{2B0595AC-5EF8-4E26-AACB-AA2D44C1577F}"
-EndProject
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Igra", "Igra\Igra.pyproj", "{CC005D04-3FE9-468B-9ABE-BA189B5A6E3D}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "main", "main.pyproj", "{CC005D04-3FE9-468B-9ABE-BA189B5A6E3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,8 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2B0595AC-5EF8-4E26-AACB-AA2D44C1577F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2B0595AC-5EF8-4E26-AACB-AA2D44C1577F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC005D04-3FE9-468B-9ABE-BA189B5A6E3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CC005D04-3FE9-468B-9ABE-BA189B5A6E3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
@@ -22,6 +18,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {7EB32F22-E992-428D-A40A-157A39CD8B49}
+		SolutionGuid = {CE4501AA-94B2-4BDF-8102-C110777AB6F5}
 	EndGlobalSection
 EndGlobal

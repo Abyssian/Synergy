@@ -708,3 +708,41 @@ print(tmp.get_password())
 gazel = Truck('Gazel', 60, 120)
 
 print(gazel.brand, gazel.color, gazel.max_speed, gazel.max_weight)
+
+#Исключения
+
+try:
+    print(45 // 0)
+except ZeroDivisionError:
+    print('Ну не надо так, на ноль делить низя')
+print('TEST')
+
+
+t = [1, 2, 5]
+try:
+    print(t[10])
+    print(45 // 0)
+except ZeroDivisionError:  #в блоке try, при ошибке, try ищет первую подходящую ошибку и выдаёт её
+    print('Ну не надо так, на ноль делить низя')
+except IndexError:
+    print('Тут ничего нет, попробуйте другой индекс')
+except Exception: #Общее исключение
+    print('абракадабра')
+finally:
+    print('finish') # В любом случае выдает finish
+print('TEST')
+
+# О-нотация
+
+n = int(input())
+m = int(input())
+a = 3
+for i in range(n):
+    for j in range(n):
+        a += 1
+
+for k in range(100):
+    for j in range(m):
+        a += 1
+
+O(n ^ 2 + m)
