@@ -588,5 +588,123 @@ print(h1.age)
 h1.goodbye()
 
 
+#Классы и объекты
+
+class Car(object):
+    brand = 'Mazda'
+    max_speed = 100
+    color = 'black'
+    
+    def __init__(self, b, ms):
+        self.brand = b
+        self.max_speed = ms
+
+    def upgrade(self):
+        self.max_speed += 25
+
+nissan = Car('Nissan', 190)
+print(nissan.brand, nissan.max_speed)
 
 
+
+class Car(object):
+    brand = 'Mazda'
+    max_speed = 100
+    color = 'black'
+    
+    def __init__(self, b, ms):
+        self.brand = b
+        self.max_speed = ms
+
+    def upgrade(self):
+        self.max_speed += 25
+
+class Truck(Car):
+    max_weight = 10
+
+    def add(self):
+        self.max_weight += 10
+
+mazda = Car('Mazda', 200)
+print(mazda.max_speed)
+
+gazel = Truck('Gazel', 60)
+gazel.upgrade()
+gazel.add()
+print(gazel.max_weight)
+
+
+
+class Car(object):
+    brand = 'Mazda'
+    max_speed = 100
+    color = 'black'
+    
+    def __init__(self, b, ms):
+        self.brand = b
+        self.max_speed = ms
+
+    def upgrade(self):
+        self.max_speed += 25
+
+class Truck(Car):
+    max_weight = 10
+
+    def __init__(self, b, ms, mw):
+        super().__init__(b, ms)
+        self.max_weight = mw
+
+    def add(self):
+        self.max_weight += 10
+
+mazda = Car('Mazda', 200)
+print(mazda.max_speed)
+
+gazel = Truck('Gazel', 60, 120)
+
+print(gazel.brand, gazel.color, gazel.max_speed, gazel.max_weight)
+
+
+class Car(object):
+    brand = 'Mazda'
+    max_speed = 100
+    color = 'black'
+    __password = 1234
+    
+    def __init__(self, b, ms):
+        self.brand = b
+        self.max_speed = ms
+
+    def __update_password(self):
+        self.__password = 234
+
+
+    def upgrade(self):
+        self.max_speed += 25
+        self.__update_password()
+
+    def get_password(self):
+        return self.__password
+
+class Truck(Car):
+    max_weight = 10
+
+    def __init__(self, b, ms, mw):
+        super().__init__(b, ms)
+        self.max_weight = mw
+
+    def add(self):
+        self.max_weight += 10
+
+mazda = Car('Mazda', 200)
+print(mazda.max_speed)
+
+tmp = Car('Mazda', 3)
+print(tmp.get_password())
+
+tmp.upgrade()
+print(tmp.get_password())
+
+gazel = Truck('Gazel', 60, 120)
+
+print(gazel.brand, gazel.color, gazel.max_speed, gazel.max_weight)
