@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Приветствие</title>
+    <link rel="stylesheet" href="{% static 'greetings/style.css' %}">
+</head>
+<body>
+
+<div class="card">
+    <h1>Введите ваше имя</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="name" placeholder="Ваше имя">
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+
+    {% if greeting %}
+        <p class="greeting">{{ greeting }}</p>
+    {% endif %}
+</div>
+
+</body>
+</html>
